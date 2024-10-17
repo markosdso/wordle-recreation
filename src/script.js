@@ -1,6 +1,6 @@
-let wordList = ["ABOUT","BOUND","CRANE","DEPTH","EXACT","FRAUD","GLOBE","HOUSE","INPUT","JOINT","KNOWN","LEGAL","STAIN"];
+//This is my test of branches/merging
 
-//test commit!
+let wordList = ["ABOUT","BOUND","CRANE","DEPTH","EXACT","FRAUD","GLOBE","HOUSE","INPUT","JOINT","KNOWN","LEGAL","STAIN"];
 
 let sampleWord = wordList[Math.floor(Math.random() * wordList.length)].split("", 5);
 console.log(sampleWord);
