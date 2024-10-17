@@ -1,0 +1,181 @@
+body {
+  background-color: #1c1c1c;
+  font-family: 'Verdana', sans-serif;
+}
+script {
+  display: none;
+}
+.word {
+  margin: 2px auto;
+  width: 310px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letter {
+  width: 50px;
+  height: 50px;
+  border: 2.2px solid #616161;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 50px;
+}
+@keyframes fill {
+  0% {padding: 0px; border-width: 2.2px;}
+  50%{padding: 3px; border-width: 2.5px;}
+  100%{padding: 0px; border-width: 2.2px;}
+}
+.filled {
+  border: 2.2px solid #858585;
+  animation: fill 0.07s;
+}
+@keyframes enter {
+  0% {height: 50px; background-color: #1c1c1c; border: 2.2px solid #858585; font-size: 30px; line-height: 50px;}
+  49% {height: 0px; background-color: #1c1c1c; border: 2.2px solid #858585; font-size: 0px; line-height: 0px;}
+  50% {height: 0px; background-color: #404040; border: 2.2px solid #404040; font-size: 0px; line-height: 0px;}
+  100% {height: 50px; background-color: #404040; border: 2.2px solid #404040; font-size: 30px; line-height: 50px;}
+}
+.entered {
+  background-color: #404040;
+  border: 2.2px solid #404040;
+  animation: enter 0.7s;
+}
+@keyframes enterYellow {
+  0% {height: 50px; background-color: #1c1c1c; border: 2.2px solid #858585; font-size: 30px; line-height: 50px;}
+  49% {height: 0px; background-color: #1c1c1c; border: 2.2px solid #858585; font-size: 0px; line-height: 0px;}
+  50% {height: 0px; background-color: #c29d19; border: 2.2px solid #c29d19; font-size: 0px; line-height: 0px;}
+  100% {height: 50px; background-color: #c29d19; border: 2.2px solid #c29d19; font-size: 30px; line-height: 50px;}
+}
+.yellow {
+  background-color: #c29d19;
+  border: 2.2px solid #c29d19;
+  animation: enterYellow 0.7s;
+}
+@keyframes enterGreen {
+    0% {height: 50px; background-color: #1c1c1c; border: 2.2px solid #858585; font-size: 30px; line-height: 50px;}
+  49% {height: 0px; background-color: #1c1c1c; border: 2.2px solid #858585; font-size: 0px; line-height: 0px;}
+  50% {height: 0px; background-color: #367a0c; border: 2.2px solid #367a0c; font-size: 0px; line-height: 0px;}
+  100% {height: 50px; background-color: #367a0c; border: 2.2px solid #367a0c; font-size: 30px; line-height: 50px;}
+}
+.green {
+  background-color: #367a0c;
+  border: 2.2px solid #367a0c;
+  animation: enterGreen 0.7s;
+}
+
+
+.keyboard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.key {
+  width: 45px;
+  height: 65px;
+  background-color: #8a8a8a;
+  margin: 5px 4px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.large {
+  width: 67.5px !important;
+  line-height: 65px !important;
+  font-size: 13px !important;
+}
+.excluded {
+  background-color: #404040 !important;
+}
+.outplace {
+  background-color: #c29d19 !important;
+}
+.inplace {
+  background-color: #367a0c !important;
+}
+
+
+#reset {
+  width: 70px;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: bold;
+  color: gainsboro;
+  border: 2px solid #616161;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#reset:hover {
+  background-color: #242424;
+}
+@keyframes endgame {
+  0% {top: 100%;}
+  100% {top: 0%;}
+}
+@keyframes begingame {
+  0% {top: 0%; display: block;}
+  100% {top: 100%; display: none;}
+}
+#endscreen {
+  width: 100%;
+  background-color: #1c1c1c;
+  position: fixed;
+  top: 0%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  text-align: center;
+  color: white;
+  display: none;
+  animation: begingame 2s;
+}
+#endscreen h1 {
+  font-family: "Bevan", serif;
+  text-align: center;
+  margin: 0;
+}
+.visible {
+  display: block !important;
+  animation: endgame 2s !important;
+}
+#endbox {
+  margin: 20px auto 10px auto;
+  width: 50px;
+  height: 50px;
+  line-height: 67px;
+  border: 10px solid #93c971;
+  border-radius: 7px;
+  background-color: #367a0c;
+}
+.lost {
+  background-color: #c29d19 !important;
+  border: 10px solid #dec364;
+}
+#endstar {
+  font-size: 40px !important;
+}
+#share {
+  background-color: #64a839;
+  width: 150px;
+  border: 10px solid #64a839;
+  border-radius: 20px;
+  margin: 15px auto 25px auto;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #616161;
+}
