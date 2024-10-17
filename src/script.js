@@ -1,5 +1,7 @@
 let wordList = ["ABOUT","BOUND","CRANE","DEPTH","EXACT","FRAUD","GLOBE","HOUSE","INPUT","JOINT","KNOWN","LEGAL","STAIN"];
 
+//test commit!
+
 let sampleWord = wordList[Math.floor(Math.random() * wordList.length)].split("", 5);
 console.log(sampleWord);
 let letterArr = ["", "", "", "", ""];
