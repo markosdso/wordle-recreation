@@ -1,0 +1,11 @@
+{
+  "name": "wordle-recreation",
+  "version": "1.0.0",
+  "description": "A Pen created on CodePen.io. Original URL: [https://codepen.io/markosdso/pen/XWvmmjm](https://codepen.io/markosdso/pen/XWvmmjm).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
