@@ -144,6 +144,11 @@ function finishGame(){
   console.log(copyable_result);
 }
 
+/* 
+This class is responsible for creating the event listeners 
+which will dispatch a keyup event corresponding to the
+letter of the clicked button.
+*/
 class KeyButton {
   constructor(key_name){
     this.key_name = key_name;
@@ -157,8 +162,11 @@ class KeyButton {
   
 }
 
+const start_char = 97
+const end_char = 122
+
 let key_button_arr = []
-for (let i = 97; i <= 122; i++) {
+for (let i = start_char; i <= end_char; i++) {
   let letter = String.fromCharCode(i);
   const key_button = new KeyButton(letter);
 }
